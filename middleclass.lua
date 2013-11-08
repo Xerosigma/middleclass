@@ -1,3 +1,5 @@
+function MC ()
+
 local middleclass = {
   _VERSION     = 'middleclass v3.0.0',
   _DESCRIPTION = 'Object Orientation for Lua',
@@ -178,3 +180,6 @@ middleclass.Object = Object
 setmetatable(middleclass, { __call = function(_, ...) return middleclass.class(...) end })
 
 return middleclass
+end
+
+mc = MC()
